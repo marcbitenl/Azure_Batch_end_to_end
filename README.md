@@ -4,7 +4,6 @@ Este projeto end-to-end foi desenvolvido para a ingestão, transformação e an�
 
 ## Arquitetura do Projeto
 
-*(Adicione a imagem da arquitetura aqui com o link correto, substituindo o exemplo abaixo)*  
 ![image](https://github.com/user-attachments/assets/c0ef6f7b-cda0-4030-ae86-fd6b5c49a5ec)
 
 ---
