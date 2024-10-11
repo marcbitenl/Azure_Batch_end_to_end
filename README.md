@@ -88,6 +88,7 @@ O projeto foi desenvolvido utilizando as seguintes ferramentas e serviços:
 
 ### 10. Dashboard
 
-![image](https://github.com/user-attachments/assets/3f6beecb-9d7a-4d9d-ba8b-0b0714b565f6)
+![image](https://github.com/user-attachments/assets/e228e6ff-86bc-458e-8c50-10b31c0101a8)
+
 
 
