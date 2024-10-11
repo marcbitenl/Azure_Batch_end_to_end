@@ -86,3 +86,8 @@ O projeto foi desenvolvido utilizando as seguintes ferramentas e serviços:
 ### 9. Execução bem-sucedida do pipeline
 ![image](https://github.com/user-attachments/assets/504fa153-72dd-449c-9262-f694d0db4aa9)
 
+### 10. Dashboard
+
+![image](https://github.com/user-attachments/assets/3f6beecb-9d7a-4d9d-ba8b-0b0714b565f6)
+
+
