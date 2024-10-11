@@ -35,7 +35,7 @@ O projeto é dividido em três grandes etapas, que cobrem todo o ciclo de vida d
 
 Este projeto implementa a arquitetura Medallion, que organiza os dados em camadas distintas para otimizar a eficiência, a governança e a qualidade dos dados:
 
-- **Camada Bronze**: Onde os dados brutos são armazenados logo após a ingestão, sem qualquer transformação. É útil para auditoria e para reprocessamento de dados históricos.
+- **Camada Bronze**: Onde os dados brutos são armazenados logo após a ingestão, sem qualquer transformação. É útil para auditoria e reprocessamento de dados históricos.
   
 - **Camada Silver**: Aqui, os dados são limpos e filtrados, corrigindo possíveis inconsistências e eliminando duplicatas. Nesta etapa, os dados já estão prontos para análises mais detalhadas.
 
@@ -57,4 +57,32 @@ O projeto foi desenvolvido utilizando as seguintes ferramentas e serviços:
 
 ---
 
-Dessa forma, o projeto abrange todo o ciclo de vida dos dados, desde a ingestão até a visualização, utilizando as melhores práticas de governança, automação e segurança na nuvem Azure.
+## Demonstração do Projeto
+
+### 1. Criação de um cofre para armazenar as senhas
+![image](https://github.com/user-attachments/assets/ed82caaa-4185-4c24-abaa-99f79291159f)
+
+### 2. Configuração da política de acesso para o Azure Key Vault
+![image](https://github.com/user-attachments/assets/92999d7c-338e-4d12-a18d-ec405dbdf6d0)
+
+### 3. Criação de um pipeline que automatiza a extração de todas as tabelas do banco local e, ao mesmo tempo, cria toda a estrutura de pastas e arquivos da camada Bronze
+![image](https://github.com/user-attachments/assets/4f876e90-dd4c-45e6-80c0-42028703eb66)
+
+### 4. Verificação no Azure Monitor para confirmar que todas as atividades foram concluídas com êxito
+![image](https://github.com/user-attachments/assets/fb4d52b9-2a73-4d5b-a992-883354aa4017)
+
+### 5. Execução bem-sucedida do pipeline
+![image](https://github.com/user-attachments/assets/82ed682d-1d05-4fb6-b0b6-8beb33976fe3)
+
+### 6. Criação de um banco de dados SQL sem servidor no Synapse Analytics, já que os dados estão armazenados no container Gold
+![image](https://github.com/user-attachments/assets/c9e27322-838e-4a9d-b743-d87799d62b34)
+
+### 7. Criação de uma stored procedure no Synapse para gerar todas as views no container Gold
+![image](https://github.com/user-attachments/assets/b91b771d-fa1b-4a6e-888a-a74454f1bc7a)
+
+### 8. Criação de um pipeline no Synapse Analytics para gerar todas as views no container Gold
+![image](https://github.com/user-attachments/assets/65754775-1207-4807-86aa-eefed44bce4f)
+
+### 9. Execução bem-sucedida do pipeline
+![image](https://github.com/user-attachments/assets/504fa153-72dd-449c-9262-f694d0db4aa9)
+
